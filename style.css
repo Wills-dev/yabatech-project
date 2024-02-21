@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#first {
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+img {
+  width: 6%;
+  height: fit-content;
+}
+
+#first h1 {
+  margin-top: 1%;
+  text-align: center;
+}
+
+#gate-pass h2 {
+  color: red;
+  font-size: 52px;
+  justify-content: center;
+  text-align: center;
+  margin-top: -30px;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.triangle {
+  width: 2px;
+  height: 10px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 30px solid red;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  position: auto;
+}
+
+#middle ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#middle h3 {
+  font-size: 130%;
+}
+
+#hero {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: auto;
+}
+
+.last {
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  bottom: 0;
+  margin-bottom: 0%;
+}
+
+.foot {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.green {
+  background-color: green;
+  color: aliceblue;
+  padding: 10px 6px;
+}
+
+.red {
+  background-color: red;
+  color: antiquewhite;
+  padding: 10px 6px;
+}
+
+.sec-green {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 6px;
+}
+
+#rr {
+  transition: all 0.3s ease-out;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem 10px;
+}
+
+.bbg img {
+  width: 50%;
+}
+
+#rr:hover {
+  box-shadow: 4px 5px 11px -5px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 4px 5px 11px -5px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 4px 5px 11px -5px rgba(0, 0, 0, 0.52);
+  color: grey;
+}
+
+#rr img {
+  width: 70%;
+
+  height: auto;
+  border: 1px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  #first h1 {
+    font-size: 16px;
+  }
+
+  .last {
+    position: absolute;
+  }
+
+  #gate-pass h2 {
+    margin-top: -5px;
+  }
+
+  #rr {
+    border-top: 20px;
+  }
+
+  #rr img {
+    height: 170px;
+    width: auto;
+  }
+  .sec-green p {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .red p {
+    font-size: 12px;
+  }
+}
