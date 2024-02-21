@@ -29,7 +29,8 @@ ul {
 
 img {
   width: 6%;
-  height: fit-content;
+  height: auto;
+  object-fit: contain;
 }
 
 #first h1 {
