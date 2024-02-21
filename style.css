@@ -9,191 +9,154 @@
 
 body {
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+  max-width: 100%;
 }
 
-section {
-  width: 100%;
-}
-
-ul {
-  list-style-type: none;
-}
-
-#first {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  margin-top: 5%;
   gap: 6rem;
-  padding: 0 10px;
+  padding: 2rem 10px;
 }
 
-#first img {
+.header img {
   width: 100px;
   height: auto;
   object-fit: contain;
 }
 
-#first h1 {
-  margin-top: 1%;
-  text-align: center;
-}
-
-#gate-pass h2 {
-  color: red;
-  font-size: 52px;
-  justify-content: center;
-  text-align: center;
-  margin-top: -30px;
-}
-
-#middle {
+.header .header__title__ctn {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
-  margin-top: 80px;
 }
 
-.triangle {
+.header__title__ctn h1 {
+  color: rgb(246, 46, 46);
+  font-size: 3rem;
+}
+
+.main__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.max__width__900 {
+  max-width: 900px;
+  width: 100%;
+  padding: 4rem 10px;
+}
+
+.max__width__900 .main__caption {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.max__width__900 .triangle {
   width: 2px;
   height: 10px;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-top: 30px solid red;
+  border-top: 30px solid rgb(246, 46, 46);
   justify-content: center;
   margin-bottom: 2rem;
   margin-top: 1rem;
   position: auto;
 }
 
-#middle ul {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
+.road__map__ctn {
+  margin: 2rem 0;
+}
+
+.road__map__ctn .road__map__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease-in;
+}
+
+.road__map__ctn .road__map__img:hover {
+  box-shadow: 8px 5px 13px -8px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 8px 5px 13px -8px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 8px 5px 13px -8px rgba(0, 0, 0, 0.47);
+}
+
+.footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer h6 {
+  color: rgb(246, 46, 46);
   text-align: center;
+  width: 100%;
   font-size: 18px;
-  font-weight: bold;
 }
 
-#middle h3,
-#middle h4 {
-  text-transform: uppercase;
-}
-
-#middle h3 {
-  font-size: 130%;
-}
-
-#hero {
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: auto;
-}
-
-.last {
-  justify-content: center;
+.footer .footer__one {
+  background: green;
+  color: #fff;
   text-align: center;
-  margin-top: 10%;
-  bottom: 0;
-  margin-bottom: 0%;
+  padding: 1rem 10px;
+  margin-top: 0.5rem;
 }
 
-.foot {
-  color: red;
-  margin-bottom: 10px;
+.footer .footer__two {
+  background: rgb(246, 46, 46);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 10px;
 }
 
-.green {
-  background-color: green;
-  color: aliceblue;
-  padding: 10px 6px;
-}
-
-.red {
-  background-color: red;
-  color: antiquewhite;
-  padding: 10px 6px;
-}
-
-.sec-green {
-  background-color: green;
+.footer .footer__three {
+  background: green;
+  color: #fff;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  padding: 10px 6px;
-}
-
-#rr {
-  transition: all 0.3s ease-out;
-  margin: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  padding: 2rem 10px;
-}
-
-.bbg img {
-  width: 50%;
-}
-
-#rr:hover {
-  box-shadow: 4px 5px 11px -5px rgba(0, 0, 0, 0.52);
-  -webkit-box-shadow: 4px 5px 11px -5px rgba(0, 0, 0, 0.52);
-  -moz-box-shadow: 4px 5px 11px -5px rgba(0, 0, 0, 0.52);
-  color: grey;
-}
-
-#rr img {
-  width: 70%;
-
-  height: auto;
-  border: 1px;
-  border-radius: 2px;
+  padding: 1rem 10px;
+  font-size: 12px;
 }
 
 @media (max-width: 600px) {
-  #first {
-    gap: 15px;
+  .header {
+    gap: 1rem;
   }
 
-  #first h1 {
-    font-size: 16px;
-  }
-
-  #first img {
+  .header img {
     width: 50px;
   }
 
-  .last {
-    position: absolute;
+  .header .header__title__ctn {
+    gap: 0.5rem;
   }
 
-  #gate-pass h2 {
-    margin-top: -5px;
+  .header__title__ctn h2 {
+    font-size: 0.9rem;
   }
 
-  #rr {
-    border-top: 20px;
+  .header__title__ctn h1 {
+    font-size: 2rem;
   }
 
-  #rr img {
-    height: 170px;
-    width: auto;
-  }
-  .sec-green p {
-    font-size: 10px;
-    font-weight: 300;
-  }
-
-  .red p {
+  .footer .footer__one {
     font-size: 12px;
+  }
+
+  .footer .footer__two {
+    font-size: 11px;
+  }
+  .footer .footer__three {
+    font-size: 8px;
   }
 }
